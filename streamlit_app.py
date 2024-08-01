@@ -21,7 +21,7 @@ with st.expander('**Data Visualization**'):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
 # Input features
-  with st.sidebar:
+with st.sidebar:
   st.header('Input Features')
   island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
   bill_length_mm = st.slider('Bill Length (mm)', 32.1, 59.6, 43.9)
